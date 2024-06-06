@@ -6,7 +6,7 @@
 1. Execute the script `MWU.py`.
 2. Open the Jupyter notebook `MWU-implementation-Matching Pennies.ipynb` to explore how the Multiplicative Weights Update (MWU) algorithm performs in the game of Matching Pennies under various learning rates.
 3. Open `increasing-delta.ipynb` to examine the effects of increasing asymmetry with consistent learning rates on the MWU algorithm.
-4. Review `MWU-Regret.ipynb` to observe how the MWU minimizes regret over time. Note that a general form is not essential for this study.
+4. Review `Regret.ipynb` to observe how the MWU minimizes regret over time. Note that a general form is not essential for this study.
 
 ### Setting Up the Payoff Matrix
 Define a payoff matrix called `cost_list` for analysis. For the standard Matching Pennies game, specify the matrix as follows:
@@ -26,6 +26,6 @@ configure it as: history = Matching.MWU(2500, new_ep=lambda ep, t: 0.8 / t**(1/3
 ### Note on Payoff Matrix Configuration
 The implementation aligns Player 2's payoff with Player 1's position to replicate findings from Bailey and Piliouras. Altering the cost_list to reflect Player 1’s perspective does not impact the results.
 
-### Transitioning to Asymmetric Equilibria
+### Transitioning to Asymmetric Zero-Sum Games
 When moving from a symmetrical Nash equilibrium (represented by a single point) to an asymmetric setting where each player has different strategies (yet still represented by a single point), ensure that the strategies
 p and q are correctly adjusted for Player 1.
