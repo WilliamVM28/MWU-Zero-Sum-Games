@@ -6,7 +6,7 @@
 1. Execute the script `MWU.py`.
 2. Open the Jupyter notebook `MWU-Implementation-Matching Pennies.ipynb` to explore how the Multiplicative Weights Update (MWU) algorithm performs in the game of Matching Pennies under various learning rates.
 3. Open `MWU-Increasing-Delta.ipynb` to examine the effects of increasing asymmetry with consistent learning rates on the MWU algorithm.
-4. Review `Regret.ipynb` to observe how the MWU minimizes regret over time. Note that a general form is not essential for this study.
+4. Review `Regret.ipynb` to observe how the MWU minimizes regret over time. Note that a general form is not important for this study.
 
 ### Setting Up the Payoff Matrix
 Define a payoff matrix called `cost_list` for analysis. For the standard Matching Pennies game, specify the matrix as follows:
